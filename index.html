@@ -28,14 +28,57 @@
         tellus vitae malesuada ultrices, neque lacus lobortis lectus, at
         volutpat ex nunc eu nibh.
       </p>
-      <button onclick="pleaseSaveUs()">Pray 🙏🏿</button>
+      <button onclick="pleaseSaveUs()">Save us 🙏🏿</button>
       <p>If the button didn't work, <a href="./saved.html">click here</a></p>
     </div>
 
     <script>
-        // I love this function ❤️
+      var counter = 0;
+
+      // I love this function ❤️
       function pleaseSaveUs() {
-        alert("let's start studying");
+        if (counter === 0) {
+          alert("Let's start studying");
+          counter++;
+        }
+      }
+    </script>
+    <script>
+      function tryMeFromTheConsole() {
+        return counter;
+      }
+
+      var fruits = [];
+
+      fruits.push("Apple");
+      fruits.push("Banana");
+      fruits.push("Melon");
+      fruits.push("Strawberry");
+
+      //   var fruits = [];
+      //   console.log(fruits);
+
+      fruits[2] = "Peach";
+
+      //   console.log(fruits);
+
+      function canUserDriveACar(age) {
+        // This variable is needed to store information about
+        // user age in years
+        var a = 0;
+
+        // Now we set the minimum age needed to obtain a license and
+        // drive a car
+        a = 18;
+
+        // Now we check if the user age is greater than the minimun
+        if (age > a) {
+          // If it's ok we return true as result of our function
+          return true;
+        } else {
+          // Otherwise we return false
+          return false;
+        }
       }
     </script>
   </body>
