@@ -3,9 +3,12 @@ function canUserDriveACar(age) {
   // user age in years
   var a = 0;
 
-  // Now we set 
+  // Now we set the minimun age required to 
+  // obtain a public license
   a = 18;
 
+  // And last step is to compare the values
+  // Can you spot the bug?
   if (age > a) {
     return true;
   } else {
